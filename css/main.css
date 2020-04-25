@@ -1,0 +1,384 @@
+:root {
+  font-family: 'Courier New';
+ /* font-size: 16px; */
+  --main-bg-color: #6e8898;         /*made a variable for these colours*/
+  --main-cg-color: #9fb1bc;
+  --main-dg-color: #ddedaa;
+  --main-eg-color: #fcb97d; 
+  --main-rg-color: #d3d0cb;
+}
+
+.navigation{
+    display: flex;
+    /*position: static;  Set the navbar to fixed position */
+    /*top: 0;  Position the navbar at the top of the page */
+    background-color: var(--main-bg-color);
+    color:white;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+
+.navigation[id= font]{
+  margin:0;
+}
+
+.navigation>li[id = space]{
+  margin:0 ;
+  padding:0;
+}
+li a {
+  display: flex;               /*Displayed in a block*/
+  color: white;
+  text-align: center;           /*Centre the a in Li*/
+  text-decoration: none;        /*Removes dots from list*/
+  padding: 1em;
+  margin:0;
+}
+ul{
+  text-decoration: none;
+  list-style-type:none;
+}
+li a:hover {
+  background-color:#475761;     /*on hover change colour*/
+  
+}
+
+
+.toTheRight{
+  margin-left: auto;
+ 
+}
+
+body{                               /*changes body colour and margin of zero for nice look*/
+  background-color:var(--main-rg-color);
+  margin:0;
+  padding: 0;
+  align-self: center;
+  
+
+
+}
+/*** Login Page****/
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items:center;
+  border-radius: 5px;
+  padding: 2.5em 2.5em 2.5em 2.5em;
+  margin:5em 20em 20em 20em;
+  background-color: var(--main-bg-color);
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/*.login-form > form{
+  margin-top:1em;
+  margin-bottom:1em;
+}*/
+
+.topStuff{
+  display:flex;
+  flex-direction: column;
+  margin:1em;
+  padding:1em;
+  justify-self: center;
+  border-top: solid white 1px;
+}
+
+form>input[type = text], form>input[type = password ]{
+  border-radius:3px;
+  padding: 0.375em 0.375em;
+  font-size: 16px;
+  border: none;
+}
+
+form>input[type = submit], .topStuff>input[type = submit]{
+  justify-self: center;
+  padding: 1em 1em;
+  border-radius:3px;
+}
+.mainBody{
+  display:flex;
+  padding:5em;
+  padding-top:2em;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+.myList{
+  padding-left:2em;
+  flex-direction: column;
+  background-color:var(--main-eg-color);
+  padding-bottom: 1em;
+}
+.navList{
+  display:flex;
+  flex-direction:row;
+  padding-bottom: 1em;
+  margin-bottom:1em;
+}
+.navList>button>i{
+  padding: .5em;
+}
+.myList[type=submit]>i{
+  padding: 2em 2em;
+  border-radius:3px;
+}
+.searchStuff{
+  padding:1em;
+  display:flex;
+  flex-direction: column ;
+  justify-content: space-evenly;
+  background-color: var(--main-dg-color);
+}
+.exampleList{
+  padding-top:1em;
+  padding-left:2em;
+  display:flex;
+  flex-direction: column ;
+  justify-content: left;
+
+}
+/** Javascript stuff **/
+#errors, .error {
+  color: maroon;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.error.hidden {
+  display: none;
+}
+
+.disbut.hidden {
+  display: none;
+}
+
+/*** Search Bar Stuff ***/
+.search-container button {
+  float: right;
+  padding: 0.375em 0.375em;
+  margin-right: 1em;
+  background:#bbb;
+  font-size: 17px;
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+  cursor: pointer;
+}
+
+ .search-container input[type=text] {
+  padding: 0.375em 0.375em;
+  border-radius: 3px 0px 0px 3px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button:hover {
+  background:#475761 ;
+}
+
+/****landing page******/
+
+.titlepicture{
+  display: flex;
+  background: url(../img/thingstodo.jpeg) no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-size: 140% ;
+  height: 32em;
+  width: 50em;
+  margin:auto;
+  margin-top:2em;
+  align-self: center;
+  justify-content: center;
+  padding-top: 3em;
+  padding-top: 10em;
+  box-sizing: border-box;
+  
+}
+.titlepicture h1{
+  color:white;
+  font-style: 'Open Sans Condensed';
+  font-size: 2em;
+}
+
+.aboutpicture{
+  display: flex;
+  background: url(../img/library.jpeg) no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-size: 140% ;
+  flex-direction: column;
+  height: 32em;
+  width: 50em;
+  margin:auto;
+  margin-top:2em;
+  padding-top: 2em;
+  padding-left:4em;
+  padding-right:4em;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.aboutpicture div{
+  background-color: var(--main-cg-color);
+  padding: 2em;
+}
+
+.aboutpicture p, .aboutpicture h3{
+  font-style: 'Open Sans Condensed';
+  color:white;
+}
+
+  
+
+.happypeople{
+  display: flex;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 450px, rgba(255, 255, 255, 1) 470px),url(../img/happynotsuperior.jpg) no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-size: 140% ;
+  height: 32em;
+  width: 50em;
+  margin:auto;
+  margin-top:2em;
+  align-self: center;
+  justify-content: flex-end;
+  padding-left: 250px;
+  box-sizing: border-box;
+  
+}
+
+
+.login-form-2{
+  max-width: 25em;
+}
+
+img.resize {
+  width:150%; /* you can use % */
+  height: auto;
+}
+
+.login-form-2>form{
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding:1em;
+  padding-bottom: 3em;
+}
+
+.login-form>form{
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding:2em;
+  padding-bottom: 1em;
+}
+.login-form>form>[name = Login]{
+  margin: 2em;
+
+}
+
+.login-form-2>form>input[type = text], .login-form-2>form>input[type = password]{
+  border-radius:3px;
+  padding: 0.375em 0.375em;
+  font-size: 16px;
+  border: solid grey 1px;
+  background-color:var(--main-eg-color);
+  margin-left:1em;
+  margin-right:2em;
+
+}
+
+/**MODAL STUFF**/
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.modal-content>textarea{
+  margin:1em;
+}
+.modal-content>button{
+  margin:1em;
+}
+.close-button {
+  align-self: flex-end;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+/***********************************list items*************************************/
+#publicList, #myListItems{
+  display:flex;
+  flex-direction: column; 
+}
+
+#publicList li, #myListItems li{
+  padding:1em;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+
+#publicList>li:hover, #myListItems>li:hover {
+  background-color:#475761;     /*on hover change colour*/
+  color: white;
+}
+
+.disbut, #publicList li a {
+  display: none;
+}
+#myListItems li:hover  .disbut {
+  display: flex;
+  margin: auto;
+}
+
+#publicList li:hover a {
+  display: flex;
+  margin: auto;
+  
+}
+
+
